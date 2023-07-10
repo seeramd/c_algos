@@ -1,8 +1,6 @@
-int recursive_sum(int arr[], int len);
-int recursive_max(int arr[], int len);
+#include "../include/my_recurse.h"
 
 int recursive_sum(int arr[], int len) {
-    int sum;
     if (len == 0)
         return 0;
     else
@@ -10,7 +8,6 @@ int recursive_sum(int arr[], int len) {
 }
 
 int recursive_max(int arr[], int len) {
-    int max;
     if (len == 1)
         return arr[len - 1]; 
     else {

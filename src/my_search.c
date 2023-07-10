@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-int bin_search(int arr[], int len, int target_value);
+#include "../include/my_search.h"
 
 int bin_search(int arr[], int len, int target_value) {
     int min = 0;

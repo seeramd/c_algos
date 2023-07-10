@@ -1,11 +1,4 @@
-#ifndef LISTS_H
-#include "lists.h"
-#define LISTS_H
-
-int array_minimum(int arr[], int len);
-void selection_sort_array(int arr[], int len);
-void selection_sort_data(node_t** head);
-void selection_sort_nodes(node_t * head);
+#include "../include/my_sort.h"
 
 int array_minimum(int arr[], int len) {
     int min = arr[0];
@@ -39,7 +32,7 @@ void selection_sort_data(node_t** head) {
 
 void selection_sort_array(int arr[], int len) {
     int i = 0;
-    int current, min, j, temp, mindex;
+    int current, min, j, mindex;
     while (i < len) {
         mindex = i;
         j = 1;
@@ -53,11 +46,9 @@ void selection_sort_array(int arr[], int len) {
             j++;
         }
         if (mindex != i) {
-            temp = min; 
             arr[mindex] = arr[i];
             arr[i] = min;
         }
         i++;
     }
 }
-#endif
