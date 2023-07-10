@@ -1,4 +1,4 @@
-#include "../include/my_recurse.h"
+#include "my_recurse.h"
 
 int recursive_sum(int arr[], int len) {
     if (len == 0)

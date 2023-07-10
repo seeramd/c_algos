@@ -1,4 +1,4 @@
-#include "../include/my_sort.h"
+#include "my_sort.h"
 
 int array_minimum(int arr[], int len) {
     int min = arr[0];

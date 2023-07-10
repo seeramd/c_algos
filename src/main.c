@@ -1,8 +1,8 @@
 #include <string.h>
-#include "../include/lists.h"
-#include "../include/my_search.h"
-#include "../include/my_sort.h"
-#include "../include/my_recurse.h"
+#include "lists.h"
+#include "my_search.h"
+#include "my_sort.h"
+#include "my_recurse.h"
 
 int main(int argc, char** argv) {
     int numbers[8] = {20, 30, 127, 11, 320, 50, 99, 100};

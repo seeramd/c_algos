@@ -12,7 +12,7 @@ _OBJ += main.o
 OBJ = $(patsubst %,$(ODIR)/%,${_OBJ})
 
 $(ODIR)/%.o: $(SRCDIR)/%.c $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
+	$(CC) -I$(IDIR) -c -o $@ $< $(CFLAGS)
 
 prog: $(OBJ)
 	$(CC) -o bin/$@ $^ $(CFLAGS)

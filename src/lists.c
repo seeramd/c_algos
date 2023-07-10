@@ -1,4 +1,4 @@
-#include "../include/lists.h"
+#include "lists.h"
 
 node_t * init_linked_list(int arr[], int len) {
     node_t * head = create_node(arr[0]);
